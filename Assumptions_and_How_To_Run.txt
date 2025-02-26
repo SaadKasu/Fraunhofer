@@ -1,0 +1,21 @@
+
+Assumptions :
+	1.) Written the test methods assuming that the data will be provided by input file and the output data will be written to an output file.
+	2.) The input an output file format will be CSV and the path needs to be provided. For this I have hardcoded the path in the test method but actual implementation can take path from user or any other input.
+	3.) Implemented a few checks for some wrong input data but there are much more that can be done. So assuming the data provided is fairly accurate.
+
+Notes : 
+	1.) Used Intellij Idea to develop the project using Java 23 and Gradle 8.10 but have also tested without using Intellij using command line gradle command "gradle clean test"
+	2.) Implemented with a HashMap as it provides excellent access times and since we only had to compare the technology with the parent. If requirement was to compare will all URLs in hierarchy (parent, grandparent,...root.), then would've used a Trie based approach.
+	3.) Code coverage is at 94%
+
+How to Run : 
+	1.) Extract the zip file and that will give you the complete project with the input file (output file is not created, will be created once the test is run).
+	2.) You can import the project in Intellij and it will make it very easy to run the tests with code coverage.
+	3.) Or else you can use the command line to run "gradle clean install" command in the project folder. Make sure you have gradle 8.10 in your system and java 23 (though tried with java 17 and it worked without any errors)
+
+	If you want to test with your own data :
+		1.) If you want to test with any other inputs please use the input file provided under src/test/resources and add your data in a new line.
+		2.) Use the formatting from previous lines.
+		3.)  Once you have added your data in input file also make sure to add the expected output line in the expectedFileOutput list inside method  setUpTestDataForFileCases() in line 40. This will help with assertions else assertions will fail and test will fail.
+		4.) Once you run the test you can see an output file created/modified that will contain the output.
