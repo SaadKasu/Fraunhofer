@@ -11,8 +11,8 @@ Notes :
 
 How to Run : 
 	1.) Extract the zip file or clone the repo from "https://github.com/SaadKasu/Fraunhofer" and that will give you the complete project with the input file (output file is not created, will be created once the test is run).
-	2.) You can import the project in Intellij and it will make it very easy to run the tests with code coverage. In Intellij project directory, go to the test class under src/test/kotlin and you will see a run option next to the class name. You can run both test methods using that button
-	3.) Or else you can use the command line to run "gradle clean install" command in the project folder. Make sure you have gradle 8.10 in your system and java 23 (though tried with java 17 and it worked without any errors)
+	2.) You can import the project in Intellij and it will make it very easy to run the tests with code coverage. In Intellij project directory, go to the test class under src/test/kotlin and you will see a run option next to the class name "TestURLDatabaseSystem.kt". You can run both test methods using that button
+	3.) If you don't want to use the IDE you can use the command line to run "gradle clean install" command in the project folder. Make sure you have gradle 8.10 in your system and java 23 (though tried with java 17 and it worked without any errors)
 
 	If you want to test with your own data :
 		1.) If you want to test with any other inputs please use the input file provided under src/test/resources and add your data in a new line.
